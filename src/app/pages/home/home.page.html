@@ -1,0 +1,24 @@
+<ion-content color="secondary">
+  <div class="fullheight xc ion-text-center">
+    <ion-card class="ion-padding">
+      <img src="assets/icons/icon-128x128.png" />
+
+      <ion-card-content>
+        <i>"Crescei na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo"</i> 
+        <br/>(2 Pedro 3:18b)
+      </ion-card-content>
+      <ion-button fill="clear" color="secondary" expand="block" [routerLink]="['/quizzes']">
+        <ion-icon slot="start" name="caret-forward-circle-outline"></ion-icon>
+        Começar
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="ion-text-center">
+      <small>Queasy (v.1.1.1) - {{year | date: 'yyyy'}} - SDG</small>
+    </div>
+  </ion-toolbar>
+</ion-footer>

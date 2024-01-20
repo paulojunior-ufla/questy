@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/quizzes"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Questy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngIf="quizz">
+    <ion-card-content>
+      <div class="ion-text-center ion-text-wrap">
+        <h2><strong>{{quizz.titulo}}</strong></h2>
+        <p>{{quizz.numQuestoes}} questões</p>
+        <img src="{{quizz.imgCapa}}" />
+      </div>
+      <div class="ion-text-left">
+        <div [innerHtml]="quizz.desc | trustContent"></div>
+        <br />
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer class="ion-no-border" *ngIf="quizz">
+  <ion-toolbar>
+    <ion-button color="warning" expand="block" (click)="onIniciar()">Iniciar</ion-button>
+  </ion-toolbar>
+</ion-footer>

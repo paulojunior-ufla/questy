@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>
+      Tentativas
+    </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid" color="secondary" (click)="onClose()">
+        Fechar
+        <ion-icon slot="end" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngIf="tentativas">
+    <div class="ion-text-center ion-padding" *ngIf="tentativas.length == 0">
+      Você não possui tentativas ainda!
+    </div>
+    <ion-item lines="full" *ngFor="let t of tentativas">
+      <ion-thumbnail slot="start">
+        <img src="{{t.imgCapa}}">
+      </ion-thumbnail>
+
+      <ion-label class="ion-text-wrap">
+        <h2>{{t.titulo}}</h2>
+        <p>Você realizou {{t.numJogadas}} jogada(s) e acertou {{t.numAcertos}} questões. Seu rendimento foi de {{((t.numAcertos / t.numQuestoes) * 100) | number : '1.0-0'}}%.</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="secondary">
+      <ion-button (click)="onVerTentativas()">
+        <ion-icon slot="end" name="server-outline"></ion-icon>
+        Ver tentativas
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Questy
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="quizzes">
+  <ion-list>
+    <div class="ion-text-center ion-padding" *ngIf="quizzes.length == 0">
+      Nenhum quiz cadastrado no momento!
+    </div>
+    <ion-item lines="full" button *ngFor="let q of quizzes" [routerLink]="['/quizzes', q.id]">
+      <ion-thumbnail slot="start">
+        <img src="{{q.imgCapa}}">
+      </ion-thumbnail>
+      <ion-label class="ion-text-wrap">
+        <h2>{{q.titulo}}</h2>
+        <p>{{q.numQuestoes}} questões</p>
+      </ion-label>
+
+      <ion-icon *ngIf="jaTentou(q)" color="success" name="checkmark" slot="end"></ion-icon>
+
+    </ion-item>
+  </ion-list>
+</ion-content>
