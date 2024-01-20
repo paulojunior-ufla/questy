@@ -1,12 +1,11 @@
     {
         "id": 1,
-        "titulo": "Questões básicas",
+        "titulo": "Questões básicas sobre teologia",
         "imgCapa": "https://cdn.pixabay.com/photo/2016/03/27/19/32/book-1283865_960_720.jpg",
         "desc": "Este <i>quizz</i> contém algumas questões básicas sobre teologia e bíblia.",
         "numQuestoes": 5,
         "questoes": [
             {
-                "id": 1,
                 "questao": "Qual é o primeiro livro da Bíblia?",
                 "A": "Êxodo",
                 "B": "Números",
@@ -15,14 +14,12 @@
                 "resposta": "C"
             },
             {
-                "id": 2,
                 "questao": "Verdadeiro ou Falso: o Espírito Santo é a terceira pessoa da Trindade.",
                 "A": "Verdadeiro",
                 "B": "Falso",
                 "resposta": "A"
             },
             {
-                "id": 3,
                 "questao": "Quantos livros a Bíblia possui?",
                 "A": "66",
                 "B": "70",
@@ -31,7 +28,6 @@
                 "resposta": "A"
             },
             {
-                "id": 4,
                 "questao": "Quem escreveu o primeiro livro da Bíblia?",
                 "A": "Abraão",
                 "B": "Isaque",
@@ -40,7 +36,6 @@
                 "resposta": "D"
             },
             {
-                "id": 5,
                 "questao": "Qual dos nomes abaixo não representa um filho de Jacó?",
                 "A": "José",
                 "B": "Judá",

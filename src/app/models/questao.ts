@@ -1,5 +1,4 @@
 export type Questao = {
-    id: number;
     questao: string;
     A: string;
     B: string;

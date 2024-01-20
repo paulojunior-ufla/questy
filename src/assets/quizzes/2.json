@@ -1,0 +1,89 @@
+    {
+        "id": 2,
+        "titulo": "Aula 1 - Eclesiastes - 14/01/24",
+        "imgCapa": "https://cdn.pixabay.com/photo/2014/10/04/21/54/lost-474124_960_720.jpg",
+        "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 1 - Difícil de traduzir - Ec 1:1-11<br/>\n(baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto)",
+        "numQuestoes": 10,
+        "questoes": [
+            {
+              "questao": "Quem foi o autor do livro de Eclesiastes?",
+              "A": "Salomão",
+              "B": "Moiśes",
+              "C": "Davi",
+              "D": "Nenhum dos anteriores",
+              "resposta": "A"
+            },
+            {
+              "questao": "Como o autor do livro de Eclesiastes se identifica?",
+              "A": "Davi",
+              "B": "Salomão",
+              "C": "O Pregador",
+              "D": "Filho de Deus",
+              "resposta": "C"
+            },
+            {
+              "questao": "Verdadeiro ou falso: segundo o autor do livro de Eclesiastes, ele foi Rei sobre Israel.",
+              "A": "Verdadeiro",
+              "B": "Falso",
+              "C": "",
+              "D": "",
+              "resposta": "A"
+            },
+            {
+              "questao": "O livro de Eclesiastes foi escrito para...",
+              "A": "Apenas a igreja",
+              "B": "Toda a humanidade",
+              "C": "Apenas as pessoas da época em que o livro foi escrito",
+              "D": "Apenas os não crentes",
+              "resposta": "B"
+            },
+            {
+              "questao": "Complete o versículo: Que proveito tem o homem de todo o seu ......, com que se afadiga debaixo do sol? (Ec 1:3)",
+              "A": "Reino",
+              "B": "Saber",
+              "C": "Dinheiro",
+              "D": "Trabalho",
+              "resposta": "D"
+            },
+            {
+              "questao": "São possíveis sinônimos para a palavra \"vaidade\", exceto:",
+              "A": "Vapor",
+              "B": "Inutilidade",
+              "C": "Beleza",
+              "D": "Sopro",
+              "resposta": "C"
+            },
+            {
+              "questao": "Verdadeiro ou falso: de acordo com o pregador, a vida debaixo do sol é frustrante e repetitiva.",
+              "A": "Verdadeiro",
+              "B": "Falso",
+              "C": "",
+              "D": "",
+              "resposta": "A"
+            },
+            {
+              "questao": "Verdadeiro ou falso: a expressão \"vida debaixo do sol\" significa olhar o mundo tendo Deus como referência.",
+              "A": "Verdadeiro",
+              "B": "Falso",
+              "C": "",
+              "D": "",
+              "resposta": "B"
+            },
+            {
+              "questao": "Na frase \"Alguém acima do sol entrou no mundo para nos resgatar\", de quem estamos falando?",
+              "A": "Salomão",
+              "B": "Rei Davi",
+              "C": "Jesus Cristo",
+              "D": "Nenhuma das anteriores",
+              "resposta": "C"
+            },
+            {
+              "questao": "Qual a mensagem principal desta aula?",
+              "A": "Sem Deus, todo nosso trabalho é apenas vaidade e correr atrás do vento.",
+              "B": "O importante neste mundo é trabalhar e se esforçar muito.",
+              "C": "Apenas Salomão sabia o que era trabalhar e se esforçar de verdade.",
+              "D": "Salomão nunca trabalhou, pois tinha vários servos a seu dispor.",
+              "resposta": "A"
+            }
+          ]
+    }
