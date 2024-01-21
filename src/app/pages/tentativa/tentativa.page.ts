@@ -106,7 +106,7 @@ export class TentativaPage implements OnInit{
       
       const alert = await this.alertCtrl.create({
         header: 'Resultado',
-        message: `Você completou este quizz e acertou ${numAcertos} de ${this.quizz.numQuestoes} questões. Seu desempenho foi de ${rendimento}%.`,
+        message: `Você completou este quiz e acertou ${numAcertos} de ${this.quizz.numQuestoes} questões. Seu desempenho foi de ${rendimento}%.`,
         buttons: [
           {
             text: 'Ok'

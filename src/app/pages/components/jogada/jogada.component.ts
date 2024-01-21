@@ -124,7 +124,7 @@ export class JogadaComponent implements OnInit {
     } else {
       const alert = await this.alertCtrl.create({
         header: 'Atenção!',
-        message: 'Deseja sair sem terminar este quizz?',
+        message: 'Deseja sair sem terminar este quiz?',
         buttons: [
           {
             text: 'Não',
