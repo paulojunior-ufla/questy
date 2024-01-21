@@ -3,7 +3,7 @@ import { ToastController } from '@ionic/angular';
 
 export enum ToastMessageType {
   ERROR = "danger",
-  SUCCESS = "success"
+  SUCCESS = "secondary"
 }
 
 @Injectable({

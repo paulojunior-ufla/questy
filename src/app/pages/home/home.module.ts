@@ -11,7 +11,13 @@ import { SharedModule } from '@app/app/shared/shared.module';
     RouterModule.forChild([
       {
         path: '',
-        component: HomePage
+        component: HomePage,
+        children: [
+          { path: 'quizzes', loadChildren: () => import('../quizzes/quizzes.module').then(m => m.QuizzesPageModule) },
+          { path: 'quizzes/:id', loadChildren: () => import('../tentativa/tentativa.module').then(m => m.TentativaPageModule) },
+          { path: 'conquistas', loadChildren: () => import('../conquistas/conquistas.module').then(m => m.ConquistasPageModule) },
+          { path: '', redirectTo: 'quizzes', pathMatch: 'full' },
+        ]
       }
     ])
   ],

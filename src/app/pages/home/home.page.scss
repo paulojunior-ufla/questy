@@ -1,4 +1,4 @@
-.fullheight {
+/* .fullheight {
   height: 100%;
 }
 
@@ -6,4 +6,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+ion-img {
+  width: 32px;
+  height: 32px;
+}
+
+
+.split-pane-visible >.split-pane-side {
+  max-width: 375px !important;
+}
+
+.active-menu {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+  margin-right: 10px;  
+  border-radius: 0 50px 50px 0;
+  font-weight: bold;
+
+  .icon-active-menu {
+      --ionicon-stroke-width: 38px;
+      color: var(--ion-color-dark);
+  }
+}
+
+ion-menu > ion-content {
+  --ion-background-color: white
 }

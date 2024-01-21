@@ -128,7 +128,8 @@ export class JogadaComponent implements OnInit {
         buttons: [
           {
             text: 'Não',
-            role: 'cancel'
+            role: 'cancel',
+            cssClass: 'alert-button-cancel'
           }, {
             text: 'Sim',
             handler: () => {

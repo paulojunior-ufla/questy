@@ -1,4 +1,4 @@
-<ion-content color="secondary">
+<!-- <ion-content color="secondary">
   <div class="fullheight xc ion-text-center">
     <ion-card class="ion-padding">
       <img src="assets/icons/icon-128x128.png" />
@@ -21,4 +21,39 @@
       <small>Queasy (v.1.1.1) - {{year | date: 'yyyy'}} - SDG</small>
     </div>
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
+
+<ion-split-pane content-id="main">
+  <ion-menu content-id="main">
+
+    <ion-header class="ion-no-border">
+      <ion-toolbar color="white">
+        <ion-item lines="none" color="white" routerLink="/">
+          <ion-title><strong>Questy</strong></ion-title>
+          <small>v0.1</small>
+        </ion-item>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list lines="none">
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button routerLink="/quizzes" routerLinkActive="active-menu">
+            <ion-icon name="list" slot="start" class="icon-active-menu"></ion-icon>
+            Quizzes
+          </ion-item>
+        </ion-menu-toggle>
+
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button routerLink="/conquistas" routerLinkActive="active-menu">
+            <ion-icon name="trophy" slot="start" class="icon-active-menu"></ion-icon>
+            Conquistas
+          </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-split-pane>
