@@ -6,19 +6,6 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
   }
-/*   {
-    path: 'quizzes',
-    loadChildren: () => import('./pages/quizzes/quizzes.module').then(m => m.QuizzesPageModule)
-  },
-  {
-    path: 'quizzes/:id',
-   loadChildren: () => import('./pages/tentativa/tentativa.module').then(m => m.TentativaPageModule)
-  }, 
-  {
-    path: '',
-    redirectTo: 'quizzes',
-    pathMatch: 'full'
-  }*/
 ];
 
 @NgModule({

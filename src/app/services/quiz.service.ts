@@ -13,7 +13,14 @@ export class QuizService {
   constructor(private http: HttpClient) { }
 
   public getQuizzes(): Promise<ResumoQuiz[]> {
-    return firstValueFrom(this.http.get<ResumoQuiz[]>(`${BASE_URL}/quizzes.json`));
+    const result$ = this.http.get<ResumoQuiz[]>(`${BASE_URL}/quizzes.json`, {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
+    });
+    return firstValueFrom(result$);
   }
 
   public getQuizz(id: number): Promise<Quiz> {

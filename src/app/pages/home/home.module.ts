@@ -17,6 +17,7 @@ import { SharedModule } from '@app/app/shared/shared.module';
           { path: 'quizzes/:id', loadChildren: () => import('../tentativa/tentativa.module').then(m => m.TentativaPageModule) },
           { path: 'conquistas', loadChildren: () => import('../conquistas/conquistas.module').then(m => m.ConquistasPageModule) },
           { path: '', redirectTo: 'quizzes', pathMatch: 'full' },
+          { path: '**', redirectTo: 'quizzes' },
         ]
       }
     ])
