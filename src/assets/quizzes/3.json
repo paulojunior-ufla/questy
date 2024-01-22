@@ -1,0 +1,89 @@
+    {
+      "id": 3,
+      "titulo": "Aula 2 - Eclesiastes - 21/01/24",
+      "imgCapa": "https://cdn.pixabay.com/photo/2016/02/16/21/07/books-1204029_960_720.jpg",
+      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 2 - Pensar dói - Ec 1:12-18<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
+      "numQuestoes": 10,
+      "questoes": [
+        {
+          "questao": "No trecho do livro estudado nesta aula (Ec 1:12-18), Salomão passa a lidar com qual conceito?",
+          "A": "Conhecimento",
+          "B": "Trabalho",
+          "C": "Morte",
+          "D": "Artes",
+          "resposta": "A"
+        },
+        {
+          "questao": "O que Salomão pediu a Deus, quando ele lhe fez a seguinte oferta: \"Pede-me o que queres que eu te dê\"?",
+          "A": "Saúde",
+          "B": "Dinheiro",
+          "C": "Paz",
+          "D": "Sabedoria",
+          "resposta": "D"
+        },
+        {
+          "questao": "Verdadeiro ou falso: o ser humano não tem desejo por conhecer as coisas, ele faz isso por obrigação.",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "B"
+        },
+        {
+          "questao": "Qual tipo de resposta para a vida, o universo e tudo mais, o computador \"Pensamento Profundo\" deu aos homens, segundo história contada no livro \"O Guia do Mochileiro das Galáxias\"?",
+          "A": "Uma canção",
+          "B": "Um livro",
+          "C": "Uma resposta numérica",
+          "D": "Nenhuma resposta",
+          "resposta": "C"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"a ciência pode até produzir bons resultados, mas ela acaba por não resolver os problemas mais fundamentais da existência humana\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "O que Salomão quer dizer com \"aquilo que é torno não se pode endireitar [...]\" (Ec1:15a)?",
+          "A": "Que não existe conhecimento verdadeiro no mundo",
+          "B": "Que apenas a educação pode endireitar as coisas",
+          "C": "Que apenas conhecimento não basta, mas sempre há algo torto que não se endireita",
+          "D": "Nenhuma das anteriores",
+          "resposta": "C"
+        },
+        {
+          "questao": "Complete o versículo: \"Quem aumenta ciência, aumenta ...",
+          "A": "Alegria",
+          "B": "Saudade",
+          "C": "Inteligência",
+          "D": "Tristeza",
+          "resposta": "D"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"conhecimento tem valor sim, desde que venha em seguida ao temor do Senhor\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Quem a Bíblia diz ser maior do que Salomão?",
+          "A": "Davi",
+          "B": "Hemã",
+          "C": "Etã",
+          "D": "Jesus Cristo",
+          "resposta": "D"
+        },
+        {
+          "questao": "Qual a mensagem principal desta aula (Ec 1:12-18)?",
+          "A": "Devemos estudar muito para sermos plenamente felizes",
+          "B": "Sem Deus, todo nosso conhecimento é apenas vaidade e correr atrás do vento",
+          "C": "Devemos ser como Salomão e aprender sobre várias coisas",
+          "D": "Deus deu sabedoria a Salomão para que ele vivesse feliz e não tivesse problemas",
+          "resposta": "B"
+        }
+      ]
+    }
