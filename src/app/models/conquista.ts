@@ -53,6 +53,24 @@ export class AcertouTodasQuestoes extends Conquista {
 
 }
 
+export class AcertouTodasQuestoesDePrimeira extends Conquista {
+
+    constructor() {
+        super("ninja", "Ninja", "Você acertou todas as questões de um quiz na primeira jogada", "assets/images/ninja.png")
+    }
+
+    ehValida(tentativas: Tentativa[]) {
+        for (let i = 0; i < tentativas.length; i++) {
+            let t = tentativas[i]
+            if (t.numAcertos == t.numQuestoes && t.numJogadas == 1) {
+                return true
+            }
+        }
+        return false
+    }
+
+}
+
 export class AcertouTodasQuestoesVariasVezes extends Conquista {
 
     constructor() {
@@ -90,7 +108,6 @@ export class AcertouTodasQuestoesAlgumasVezes extends Conquista {
     }
 
 }
-
 
 export class RespondeuVariasQuestoes extends Conquista {
 

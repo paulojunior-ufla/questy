@@ -9,8 +9,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" *ngIf="quizzes">
+<ion-content *ngIf="quizzes">
   <ion-list lines="none">
+    <ion-item color="white" class="aviso ion-margin">
+      <ion-label class="ion-text-wrap">
+        <p><strong>Escolha um quiz para começar</strong>. E não se preocupe, seus dados ficam armazenados apenas no seu dispositivo.</p>
+      </ion-label>
+    </ion-item>
+  
+
     <ion-item *ngFor="let q of quizzes" [routerLink]="['/quizzes', q.id]" class="ion-padding-bottom">
       <ion-thumbnail slot="start">
         <img src="{{q.imgCapa}}">

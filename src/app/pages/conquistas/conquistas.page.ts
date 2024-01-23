@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AcertouTodasQuestoes, AcertouTodasQuestoesAlgumasVezes, AcertouTodasQuestoesVariasVezes, Conquista, PrimeiroQuizConcluido, RealizouMaisJogadas, RespondeuMuitasQuestoes, RespondeuVariasQuestoes } from '@app/app/models/conquista';
+import { AcertouTodasQuestoes, AcertouTodasQuestoesAlgumasVezes, AcertouTodasQuestoesDePrimeira, AcertouTodasQuestoesVariasVezes, Conquista, PrimeiroQuizConcluido, RealizouMaisJogadas, RespondeuMuitasQuestoes, RespondeuVariasQuestoes } from '@app/app/models/conquista';
 import { StorageConquistaService } from '@app/app/services/storage-conquista.service';
 import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
 import { AlertController } from '@ionic/angular';
@@ -15,6 +15,7 @@ export class ConquistasPage {
     new PrimeiroQuizConcluido(),
     new RealizouMaisJogadas(),
     new AcertouTodasQuestoes(),
+    new AcertouTodasQuestoesDePrimeira(),
     new RespondeuVariasQuestoes(),
     new RespondeuMuitasQuestoes(),
     new AcertouTodasQuestoesAlgumasVezes(),
