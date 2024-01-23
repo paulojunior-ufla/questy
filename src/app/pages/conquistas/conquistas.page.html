@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Conquistas
+      Histórico
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,7 +13,7 @@
 <ion-content>
   <ion-list *ngIf="tentativas" lines="none">
     <div class="ion-text-center ion-padding" *ngIf="tentativas.length == 0">
-      Você não possui conquistas ainda!
+      Você não realizou quizzes ainda!
     </div>
     <ion-item *ngFor="let t of tentativas" class="ion-padding-bottom">
       <ion-thumbnail slot="start">
