@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { AcertouTodasQuestoes, Conquista, MuitasQuestoes, PrimeiroQuizConcluido } from '@app/app/models/conquista';
-import { Tentativa } from '@app/app/models/tentativa';
+import { AcertouTodasQuestoes, AcertouTodasQuestoesVariasVezes, Conquista, PrimeiroQuizConcluido, RealizouMaisJogadas, RespondeuMuitasQuestoes, RespondeuVariasQuestoes } from '@app/app/models/conquista';
 import { StorageConquistaService } from '@app/app/services/storage-conquista.service';
 import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
-import { AlertController, ModalController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-conquistas',
@@ -14,8 +13,11 @@ export class ConquistasPage {
 
   conquistas: Conquista[] = [
     new PrimeiroQuizConcluido(),
+    new RealizouMaisJogadas(),
     new AcertouTodasQuestoes(),
-    new MuitasQuestoes()
+    new RespondeuVariasQuestoes(),
+    new RespondeuMuitasQuestoes(),
+    new AcertouTodasQuestoesVariasVezes()
   ]
 
   constructor(
@@ -38,7 +40,8 @@ export class ConquistasPage {
       }
 
       if (c.ehValida(tentativas)) {
-        this.conquistaStorage.addConquista(c.codigo)
+        c.conquistou()
+        await this.conquistaStorage.addConquista(c.codigo)
         const alert = await this.alertCtrl.create({
           header: 'Parabéns',
           message: `Você alcançou uma nova conquista: ${c.nome}`,

@@ -28,7 +28,6 @@ export class PrimeiroQuizConcluido extends Conquista {
 
     ehValida(tentativas: Tentativa[]) {
         if (tentativas.length > 0) {
-            this.conquistou()
             return true
         }
         return false
@@ -39,24 +38,44 @@ export class PrimeiroQuizConcluido extends Conquista {
 export class AcertouTodasQuestoes extends Conquista {
 
     constructor() {
-        super("fera", "Fera", "Você acertou 100% das questões de um quiz", "assets/images/fera.png")
+        super("inteligente", "inteligente", "Você acertou todas as questões de um quiz", "assets/images/inteligente.png")
     }
 
     ehValida(tentativas: Tentativa[]) {
-        tentativas.forEach(t => {
+        for (let i = 0; i < tentativas.length; i++) {
+            let t = tentativas[i]
             if (t.numAcertos == t.numQuestoes) {
-                this.conquistou()
+                return true
             }
-        })
-        return this.possui
+        }
+        return false
     }
 
 }
 
-export class MuitasQuestoes extends Conquista {
+export class AcertouTodasQuestoesVariasVezes extends Conquista {
 
     constructor() {
-        super("perseverante", "Perseverante", "Você já respondeu mais de 50 questões", "assets/images/perseverante.png")
+        super("mito", "Mito", "Você acertou todas as questões de mais de 10 quizzes", "assets/images/mito.png")
+    }
+
+    ehValida(tentativas: Tentativa[]) {
+        let totalQuizzes = 0
+        for (let i = 0; i < tentativas.length; i++) {
+            let t = tentativas[i]
+            if (t.numAcertos == t.numQuestoes) {
+                totalQuizzes += 1
+            }
+        }
+        return totalQuizzes > 10
+    }
+
+}
+
+export class RespondeuVariasQuestoes extends Conquista {
+
+    constructor() {
+        super("engajado", "Engajado", "Você já respondeu mais de 50 questões", "assets/images/engajado.png")
     }
 
     ehValida(tentativas: Tentativa[]) {
@@ -64,10 +83,39 @@ export class MuitasQuestoes extends Conquista {
         tentativas.forEach(t => {
             totalQuestoes += t.numQuestoes
         })
-        if (totalQuestoes > 30) {
-            this.conquistou()
-            return true
+        return totalQuestoes > 50
+    }
+}
+
+export class RespondeuMuitasQuestoes extends Conquista {
+
+    constructor() {
+        super("produtivo", "Produtivo", "Você já respondeu mais de 100 questões", "assets/images/produtivo.png")
+    }
+
+    ehValida(tentativas: Tentativa[]) {
+        let totalQuestoes = 0
+        tentativas.forEach(t => {
+            totalQuestoes += t.numQuestoes
+        })
+        return totalQuestoes > 100
+    }
+}
+
+export class RealizouMaisJogadas extends Conquista {
+
+    constructor() {
+        super("perseverante", "perseverante", "Você realizou mais de uma jogada em um quiz", "assets/images/perseverante.png")
+    }
+
+    ehValida(tentativas: Tentativa[]) {
+        for (let i = 0; i < tentativas.length; i++) {
+            let t = tentativas[i]
+            if (t.numJogadas > 1) {
+                return true
+            }
         }
         return false
     }
+
 }
