@@ -15,6 +15,7 @@ import { SharedModule } from '@app/app/shared/shared.module';
         children: [
           { path: 'quizzes', loadChildren: () => import('../quizzes/quizzes.module').then(m => m.QuizzesPageModule) },
           { path: 'quizzes/:id', loadChildren: () => import('../tentativa/tentativa.module').then(m => m.TentativaPageModule) },
+          { path: 'historico', loadChildren: () => import('../historico/historico.module').then(m => m.HistoricoPageModule) },
           { path: 'conquistas', loadChildren: () => import('../conquistas/conquistas.module').then(m => m.ConquistasPageModule) },
           { path: '', redirectTo: 'quizzes', pathMatch: 'full' },
           { path: '**', redirectTo: 'quizzes' },

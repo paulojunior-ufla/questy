@@ -1,28 +1,24 @@
-<ion-header  class="ion-no-border">
+<ion-header class="ion-no-border">
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Histórico
+      Conquistas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content>
-  <ion-list *ngIf="tentativas" lines="none">
-    <div class="ion-text-center ion-padding" *ngIf="tentativas.length == 0">
-      Você não realizou quizzes ainda!
-    </div>
-    <ion-item *ngFor="let t of tentativas" class="ion-padding-bottom">
+  <ion-list *ngIf="conquistas" lines="none">
+    <ion-item *ngFor="let c of conquistas" class="ion-padding-bottom" [disabled]="!c.possui">
       <ion-thumbnail slot="start">
-        <img src="{{t.imgCapa}}">
+        <img [src]="c.img">
       </ion-thumbnail>
 
       <ion-label class="ion-text-wrap">
-        <h2><strong>{{t.titulo}}</strong></h2>
-        <p>Você realizou {{t.numJogadas}} jogada(s) e acertou {{t.numAcertos}} questões. Seu rendimento foi de {{((t.numAcertos / t.numQuestoes) * 100) | number : '1.0-0'}}%.</p>
+        <h2><strong>{{c.nome}}</strong></h2>
+        <p>{{c.desc}}</p>
       </ion-label>
     </ion-item>
   </ion-list>

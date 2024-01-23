@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
 
-import { QuizzesPage } from './quizzes.page';
+import { HistoricoPage } from './historico.page';
 import { SharedModule } from '@app/app/shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -10,10 +10,10 @@ import { SharedModule } from '@app/app/shared/shared.module';
     RouterModule.forChild([
       {
         path: '',
-        component: QuizzesPage
+        component: HistoricoPage
       }
     ])
   ],
-  declarations: [QuizzesPage]
+  declarations: [HistoricoPage]
 })
-export class QuizzesPageModule {}
+export class HistoricoPageModule {}

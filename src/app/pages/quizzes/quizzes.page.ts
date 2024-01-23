@@ -4,8 +4,7 @@ import { Tentativa } from '@app/app/models/tentativa';
 import { QuizService } from '@app/app/services/quiz.service';
 import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
 import { ToastMessageType, ToastService } from '@app/app/services/toast.service';
-import { LoadingController, ModalController } from '@ionic/angular';
-import { TentativasComponent } from '../components/tentativas/tentativas.component';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-quizzes',
@@ -22,11 +21,8 @@ export class QuizzesPage {
     private readonly quizService: QuizService,
     private readonly tentativasStorage: StorageTentativasService,
     private readonly loadingCtrl: LoadingController,
-    private readonly modalCtrl: ModalController,
     private readonly toastService: ToastService,
   ) { }
-
-
 
   async ionViewDidEnter() {
     const loading = await this.loadingCtrl.create({
@@ -48,14 +44,4 @@ export class QuizzesPage {
     if (!this.tentativas) return false;
     return this.tentativas.find(item => item.idQuiz == q.id) ? true : false;
   }
-
-  async onVerTentativas() {
-    const modal = await this.modalCtrl.create({
-      component: TentativasComponent,
-      backdropDismiss: false
-    });
-
-    return await modal.present();
-  }
-
 }
