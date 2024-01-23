@@ -15,7 +15,6 @@ export class QuizzesPage {
 
   quizzes: ResumoQuiz[] = []
   tentativas: Tentativa[] = []
-  isLoading = false
 
   constructor(
     private readonly quizService: QuizService,

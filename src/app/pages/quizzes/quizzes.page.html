@@ -11,9 +11,9 @@
 
 <ion-content *ngIf="quizzes">
   <ion-list lines="none">
-    <ion-item color="white" class="aviso ion-margin">
+    <ion-item color="white" class="aviso" *ngIf="quizzes.length > 0">
       <ion-label class="ion-text-wrap">
-        <p><strong>Escolha um quiz para começar</strong>. E não se preocupe, seus dados ficam armazenados apenas no seu dispositivo.</p>
+        <p><strong>Escolha um quiz para começar</strong>. Não se preocupe, seus dados ficam armazenados apenas no seu dispositivo.</p>
       </ion-label>
     </ion-item>
   
