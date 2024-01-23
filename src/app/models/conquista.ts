@@ -38,7 +38,7 @@ export class PrimeiroQuizConcluido extends Conquista {
 export class AcertouTodasQuestoes extends Conquista {
 
     constructor() {
-        super("inteligente", "inteligente", "Você acertou todas as questões de um quiz", "assets/images/inteligente.png")
+        super("inteligente", "Inteligente", "Você acertou todas as questões de um quiz", "assets/images/inteligente.png")
     }
 
     ehValida(tentativas: Tentativa[]) {
@@ -71,6 +71,26 @@ export class AcertouTodasQuestoesVariasVezes extends Conquista {
     }
 
 }
+
+export class AcertouTodasQuestoesAlgumasVezes extends Conquista {
+
+    constructor() {
+        super("genio", "Gênio", "Você acertou todas as questões de mais de 5 quizzes", "assets/images/genio.png")
+    }
+
+    ehValida(tentativas: Tentativa[]) {
+        let totalQuizzes = 0
+        for (let i = 0; i < tentativas.length; i++) {
+            let t = tentativas[i]
+            if (t.numAcertos == t.numQuestoes) {
+                totalQuizzes += 1
+            }
+        }
+        return totalQuizzes > 5
+    }
+
+}
+
 
 export class RespondeuVariasQuestoes extends Conquista {
 
@@ -105,7 +125,7 @@ export class RespondeuMuitasQuestoes extends Conquista {
 export class RealizouMaisJogadas extends Conquista {
 
     constructor() {
-        super("perseverante", "perseverante", "Você realizou mais de uma jogada em um quiz", "assets/images/perseverante.png")
+        super("perseverante", "Perseverante", "Você realizou mais de uma jogada em um quiz", "assets/images/perseverante.png")
     }
 
     ehValida(tentativas: Tentativa[]) {
