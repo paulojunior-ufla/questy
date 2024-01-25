@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AcertouTodasQuestoes, AcertouTodasQuestoesAlgumasVezes, AcertouTodasQuestoesDePrimeira, AcertouTodasQuestoesVariasVezes, Conquista, PrimeiroQuizConcluido, RealizouMaisJogadas, RespondeuMuitasQuestoes, RespondeuVariasQuestoes } from '@app/app/models/conquista';
-import { StorageConquistaService } from '@app/app/services/storage-conquista.service';
-import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
+import { StorageService } from '@app/app/services/storage.service';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -23,8 +22,7 @@ export class ConquistasPage {
   ]
 
   constructor(
-    private readonly conquistaStorage: StorageConquistaService,
-    private readonly tentativasStorage: StorageTentativasService,
+    private readonly storage: StorageService,
     private readonly alertCtrl: AlertController
   ) { }
 
@@ -33,17 +31,17 @@ export class ConquistasPage {
   }
 
   async carregaMinhasConquistas() {
-    const tentativas = await this.tentativasStorage.getTentativas()
+    const tentativas = await this.storage.getTentativas()
     for (let i = 0; i < this.conquistas.length; i++) {
       let c = this.conquistas[i]
-      if (await this.conquistaStorage.possuiConquista(c.codigo)) {
+      if (await this.storage.possuiConquista(c)) {
         c.conquistou()
         continue
       }
 
       if (c.ehValida(tentativas)) {
         c.conquistou()
-        await this.conquistaStorage.addConquista(c.codigo)
+        await this.storage.addConquista(c)
         const alert = await this.alertCtrl.create({
           header: 'Parabéns',
           message: `Você alcançou uma nova conquista: ${c.nome}`,

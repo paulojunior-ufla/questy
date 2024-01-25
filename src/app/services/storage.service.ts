@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Tentativa } from '../models/tentativa';
 import { Storage } from '@ionic/storage-angular';
+import { Tentativa } from '../models/tentativa';
+import { Conquista } from '../models/conquista';
+
+const STORAGE_KEY = "TENTATIVAS"
+const AVISO_KEY = "AVISO"
 
 @Injectable({
   providedIn: 'root'
 })
-export class StorageTentativasService {
+export class StorageService {
 
-  private readonly STORAGE_KEY: string = "TENTATIVAS";
   private _storage: Storage | null = null;
 
   constructor(private storage: Storage) {
@@ -20,7 +23,7 @@ export class StorageTentativasService {
   }
 
   async getTentativas(): Promise<Tentativa[]> {
-    const tentativas = await this._storage?.get(this.STORAGE_KEY)
+    const tentativas = await this._storage?.get(STORAGE_KEY)
     return tentativas || []
   }
 
@@ -32,12 +35,30 @@ export class StorageTentativasService {
   async updateTentativa(t: Tentativa): Promise<void> {
     let tentativas = await this.getTentativas();
     tentativas = tentativas.map(item => item.idQuiz == t.idQuiz ? t : item);
-    await this._storage?.set(this.STORAGE_KEY, tentativas);
+    await this._storage?.set(STORAGE_KEY, tentativas);
   }
 
   async addTentativa(t: Tentativa): Promise<void> {
     const tentativas = await this.getTentativas();
     tentativas.push(t);
-    await this._storage?.set(this.STORAGE_KEY, tentativas);
+    await this._storage?.set(STORAGE_KEY, tentativas);
+  }
+
+  async possuiConquista(c: Conquista): Promise<boolean> {
+    const result = await this._storage?.get(c.codigo)
+    return result
+  }
+
+  async addConquista(c: Conquista): Promise<void> {
+    await this._storage?.set(c.codigo, true)
+  }
+
+  async leuAviso(): Promise<boolean> {
+    const result = await this._storage?.get(AVISO_KEY)
+    return result
+  }
+
+  async marcarAvisoComoLido(): Promise<void> {
+    await this._storage?.set(AVISO_KEY, true)
   }
 }

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ResumoQuiz } from '@app/app/models/quiz';
 import { Tentativa } from '@app/app/models/tentativa';
 import { QuizService } from '@app/app/services/quiz.service';
-import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
+import { StorageService } from '@app/app/services/storage.service';
 import { ToastMessageType, ToastService } from '@app/app/services/toast.service';
 import { LoadingController } from '@ionic/angular';
 
@@ -15,10 +15,11 @@ export class QuizzesPage {
 
   quizzes: ResumoQuiz[] = []
   tentativas: Tentativa[] = []
+  avisoLido: boolean = false
 
   constructor(
     private readonly quizService: QuizService,
-    private readonly tentativasStorage: StorageTentativasService,
+    private readonly storage: StorageService,
     private readonly loadingCtrl: LoadingController,
     private readonly toastService: ToastService,
   ) { }
@@ -29,8 +30,9 @@ export class QuizzesPage {
     });
     try {
       await loading.present();
+      this.avisoLido = await this.storage.leuAviso();
       this.quizzes = await this.quizService.getQuizzes();
-      this.tentativas = await this.tentativasStorage.getTentativas();
+      this.tentativas = await this.storage.getTentativas();
     } catch (error) {
       this.toastService.showMessage("Ops... algo deu errado! Tente novamente mais tarde",
         ToastMessageType.ERROR)
@@ -42,5 +44,10 @@ export class QuizzesPage {
   jaTentou(q: ResumoQuiz) {
     if (!this.tentativas) return false;
     return this.tentativas.find(item => item.idQuiz == q.id) ? true : false;
+  }
+
+  async onEntendido() {
+    await this.storage.marcarAvisoComoLido()
+    this.avisoLido = true
   }
 }

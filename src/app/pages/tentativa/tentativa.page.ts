@@ -5,10 +5,9 @@ import { QuizService } from '@app/app/services/quiz.service';
 import { ToastMessageType, ToastService } from '@app/app/services/toast.service';
 import { AlertController, LoadingController, ModalController } from '@ionic/angular';
 import { JogadaComponent } from '../components/jogada/jogada.component';
-import { Tentativa } from '@app/app/models/tentativa';
-import { StorageTentativasService } from '@app/app/services/storage-tentativas.service';
 import { formatNumber } from '@angular/common';
 import { NativeAudio } from '@capacitor-community/native-audio';
+import { StorageService } from '@app/app/services/storage.service';
 
 @Component({
   selector: 'app-tentativa',
@@ -24,7 +23,7 @@ export class TentativaPage implements OnInit{
     private readonly loadingCtrl: LoadingController,
     private readonly modalCtrl: ModalController,
     private readonly quizService: QuizService,
-    private readonly tentativasStorage: StorageTentativasService,
+    private readonly storage: StorageService,
     private readonly actRoute: ActivatedRoute,
     private readonly toastService: ToastService,
     private alertCtrl: AlertController
@@ -72,7 +71,7 @@ export class TentativaPage implements OnInit{
   }
 
   async salvarTentativa(numAcertos: number) {
-    let tentativa = await this.tentativasStorage.getTentativa(this.quizz.id);
+    let tentativa = await this.storage.getTentativa(this.quizz.id);
     if (!tentativa) {
       tentativa = {
         idQuiz: this.quizz.id,
@@ -82,11 +81,11 @@ export class TentativaPage implements OnInit{
         numAcertos: numAcertos,
         numJogadas: 1
       };
-      await this.tentativasStorage.addTentativa(tentativa);
+      await this.storage.addTentativa(tentativa);
     } else {
       tentativa.numJogadas += 1;
       tentativa.numAcertos =  tentativa.numAcertos < numAcertos ? numAcertos : tentativa.numAcertos
-      await this.tentativasStorage.updateTentativa(tentativa);
+      await this.storage.updateTentativa(tentativa);
     }
   }
 

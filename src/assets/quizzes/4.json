@@ -1,0 +1,89 @@
+    {
+      "id": 4,
+      "titulo": "Aula 3 - Eclesiastes - 28/01/24",
+      "imgCapa": "https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg",
+      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 3 - Pra não dizer que não falei das flores - Ec 2:1-11<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
+      "numQuestoes": 10,
+      "questoes": [
+        {
+          "questao": "Verdadeiro ou falso: uma maneira de a humanidade lidar com o vazio do coração é fingir que esse vazio não existe.",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Qual foi o texto base lido nesta aula?",
+          "A": "Ec 1:1-11",
+          "B": "Ec 1:12-18",
+          "C": "Ec 2:1-11",
+          "D": "Nenhuma das anteriores",
+          "resposta": "C"
+        },
+        {
+          "questao": "Verdadeiro ou falso: uma forma de fingir que o vazio do coração não existe é buscar satisfação no prazer e na diversão.",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Complete o versículo: \"Do riso disse: é ........; e da alegria de que serve? \" (Ec 2:2)",
+          "A": "bom",
+          "B": "loucura",
+          "C": "satisfatório",
+          "D": "tristeza",
+          "resposta": "B"
+        },
+        {
+          "questao": "Quem disse a frase: \"Pecado não é simplesmente fazer coisas ruins, é colocar coisas boas no lugar de Deus",
+          "A": "Silvio Santos",
+          "B": "Salomão",
+          "C": "O pregador",
+          "D": "Tim Keller",
+          "resposta": "D"
+        },
+        {
+          "questao": "Nesta aula, nós vimos que Salomão segue a sua busca por satisfação em todas essas coisas, exceto:",
+          "A": "Na diversão",
+          "B": "No vinho",
+          "C": "No conhecimento",
+          "D": "No prazer com mulheres",
+          "resposta": "C"
+        },
+        {
+          "questao": "Quantas esposas e comcubinas teve Salomão?",
+          "A": "Mil",
+          "B": "Cem",
+          "C": "Dez",
+          "D": "Apenas uma",
+          "resposta": "A"
+        },
+        {
+          "questao": "Verdadeiro ou falso: outra maneira que a humanidade tem de lidar com o vazio do coração é tentar enchê-lo de grandes obras e conquistas.",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Complete o versículo: \"Empreendi grandes obras; edifiquei para mim .........; plantei para mim .........\" (Ec 2:4)",
+          "A": "templos; vinhas",
+          "B": "casas; vinhas",
+          "C": "casas; pomares",
+          "D": "palácios; vinhas",
+          "resposta": "B"
+        },
+        {
+          "questao": "Qual a tradução do verso Ec 2:1 na versão NAA (Nova Almeida Atualizada) da Bíblia?",
+          "A": "Disse comigo: vamos! Eu te provarei com a alegria; goza, pois, a felicidade; mas também isso era vaidade.",
+          "B": "Pensei comigo mesmo: Vamos. Vou experimentar a alegria. Descubra as coisas boas da vida! Mas isso também se revelou inútil.",
+          "C": "Disse eu no meu coração: Ora vem, eu te provarei com alegria; portanto goza o prazer; mas eis que também isso era vaidade.",
+          "D": "Disse comigo: vamos! Eu te provarei com a alegria; goza, pois, a felicidade; mas também isso era vaidade",
+          "resposta": "D"
+        }
+      ]
+    }
