@@ -45,7 +45,7 @@
   <ion-list lines="none">
     <ion-item *ngFor="let q of quizzes" [routerLink]="['/quizzes', q.id]" class="ion-padding-bottom">
       <ion-thumbnail slot="start">
-        <img src="{{q.imgThumb}}">
+        <img src="{{q.imgCapa}}">
       </ion-thumbnail>
       <ion-label class="ion-text-wrap">
         <h2><strong>{{q.titulo}}</strong></h2>

@@ -16,7 +16,7 @@ export class QuizzesPage {
   quizzes: ResumoQuiz[] = []
   tentativas: Tentativa[] = []
   avisoLido: boolean = false
-  opcaoEscolhida = "Todos"
+  opcaoEscolhida = ""
 
   constructor(
     private readonly quizService: QuizService,
@@ -26,6 +26,8 @@ export class QuizzesPage {
   ) { }
 
   async ionViewDidEnter() {
+    this.opcaoEscolhida = "Todos"
+
     const loading = await this.loadingCtrl.create({
       message: 'Carregando...'
     });

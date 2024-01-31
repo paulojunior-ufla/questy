@@ -3,7 +3,7 @@ import { Questao } from "./questao";
 export type ResumoQuiz = {
     id: number;
     titulo: string;
-    imgThumb: string;
+    imgCapa: string;
     numQuestoes: number;
     categoria: string;
 }
