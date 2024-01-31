@@ -2,25 +2,30 @@
     {
         "id": 4,
         "titulo": "Aula 3 - Eclesiastes - 28/01/24",
-        "imgCapa": "https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg",
-        "numQuestoes": 10
+        "imgThumb": "https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg",
+        "numQuestoes": 10,
+        "categoria": "EBD"
     },
     {
         "id": 3,
         "titulo": "Aula 2 - Eclesiastes - 21/01/24",
-        "imgCapa": "https://cdn.pixabay.com/photo/2014/11/24/18/50/mind-544404_960_720.png",
-        "numQuestoes": 10
+        "imgThumb": "https://cdn.pixabay.com/photo/2014/11/24/18/50/mind-544404_960_720.png",
+        "numQuestoes": 10,
+        "categoria": "EBD"
+
     },
     {
         "id": 2,
         "titulo": "Aula 1 - Eclesiastes - 14/01/24",
-        "imgCapa": "https://cdn.pixabay.com/photo/2019/06/14/21/43/hardhat-4274430_960_720.jpg",
-        "numQuestoes": 10
+        "imgThumb": "https://cdn.pixabay.com/photo/2019/06/14/21/43/hardhat-4274430_960_720.jpg",
+        "numQuestoes": 10,
+        "categoria": "EBD"
     },
     {
         "id": 1,
         "titulo": "Questões básicas sobre teologia",
-        "imgCapa": "https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_960_720.jpg",
-        "numQuestoes": 5
+        "imgThumb": "https://cdn.pixabay.com/photo/2016/05/28/07/05/book-1421097_960_720.jpg",
+        "numQuestoes": 5,
+        "categoria": "Outros"
     }
 ]

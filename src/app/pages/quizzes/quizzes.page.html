@@ -3,20 +3,32 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button id="popover-options">
+        <ion-icon name="options" slot="start"></ion-icon>
+        {{opcaoEscolhida}}
+      </ion-button>
+    </ion-buttons>
     <ion-title>
       Início
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content *ngIf="quizzes">
-  <!-- <ion-item color="white" class="aviso" *ngIf="quizzes.length > 0">
-    <ion-label class="ion-text-wrap">
-      <p><strong>Escolha um quiz para começar</strong>. Não se preocupe, seus dados ficam armazenados apenas no seu
-        dispositivo.</p>
-    </ion-label>
-  </ion-item> -->
+<ion-popover trigger="popover-options" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-list lines="none">
+        <ion-item [button]="true" (click)="semFiltro()">Todos</ion-item>
+        <ion-item [button]="true" (click)="porCategoria('EBD')">EBD</ion-item>
+        <ion-item [button]="true" (click)="porCategoria('Devocionais')">Devocionais</ion-item>
+        <ion-item [button]="true" (click)="porCategoria('Outros')">Outros</ion-item>
+      </ion-list>
+    </ion-content>
+  </ng-template>
+</ion-popover>
 
+<ion-content *ngIf="quizzes">
   <ion-card class="ion-padding" *ngIf="!avisoLido && quizzes.length > 0">
     <ion-card-header>
       <ion-card-title><strong>Escolha um quiz para começar</strong></ion-card-title>
@@ -33,11 +45,11 @@
   <ion-list lines="none">
     <ion-item *ngFor="let q of quizzes" [routerLink]="['/quizzes', q.id]" class="ion-padding-bottom">
       <ion-thumbnail slot="start">
-        <img src="{{q.imgCapa}}">
+        <img src="{{q.imgThumb}}">
       </ion-thumbnail>
       <ion-label class="ion-text-wrap">
         <h2><strong>{{q.titulo}}</strong></h2>
-        <p>{{q.numQuestoes}} questões</p>
+        <p>{{q.categoria}} - {{q.numQuestoes}} questões</p>
       </ion-label>
 
       <ion-icon *ngIf="jaTentou(q)" color="tertiary" name="checkmark" slot="end"></ion-icon>

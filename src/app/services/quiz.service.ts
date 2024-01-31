@@ -12,7 +12,7 @@ export class QuizService {
 
   constructor(private http: HttpClient) { }
 
-  public getQuizzes(): Promise<ResumoQuiz[]> {
+  getQuizzes(): Promise<ResumoQuiz[]> {
     const result$ = this.http.get<ResumoQuiz[]>(`${BASE_URL}/quizzes.json`, {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
@@ -23,7 +23,17 @@ export class QuizService {
     return firstValueFrom(result$);
   }
 
-  public getQuizz(id: number): Promise<Quiz> {
+  async getQuizzesPorCategoria(cat: string): Promise<ResumoQuiz[]> {
+    let quizzes = await this.getQuizzes()
+    return quizzes.filter(item => item.categoria == cat)
+  }
+
+  getQuizz(id: number): Promise<Quiz> {
     return firstValueFrom(this.http.get<Quiz>(`${BASE_URL}/${id}.json`));
+  }
+
+  async getQuantidadeQuizzes(): Promise<number> {
+    const quizzes = await this.getQuizzes()
+    return quizzes.length
   }
 }

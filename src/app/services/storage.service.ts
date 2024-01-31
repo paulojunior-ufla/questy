@@ -27,6 +27,11 @@ export class StorageService {
     return tentativas || []
   }
 
+  async getQuantidadeTentativas(): Promise<number> {
+    const tentativas = await this.getTentativas()
+    return tentativas.length
+  }
+
   async getTentativa(idQuiz: number): Promise<Tentativa | null> {
     const tentativas = await this.getTentativas()
     return tentativas.find(item => item.idQuiz == idQuiz) || null

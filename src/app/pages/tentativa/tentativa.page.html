@@ -22,7 +22,7 @@
             <div class="ion-text-center ion-text-wrap">
               <h2><strong>{{quizz.titulo}}</strong></h2>
               <p>{{quizz.numQuestoes}} questões</p>
-              <img src="{{quizz.imgCapa}}" />
+              <img src="{{quizz.imgCapa}}" *ngIf="quizz.imgCapa"/>
             </div>
             <div class="ion-text-left ion-padding-top">
               <div [innerHtml]="quizz.desc | trustContent"></div>

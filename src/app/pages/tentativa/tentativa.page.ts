@@ -8,13 +8,14 @@ import { JogadaComponent } from '../components/jogada/jogada.component';
 import { formatNumber } from '@angular/common';
 import { NativeAudio } from '@capacitor-community/native-audio';
 import { StorageService } from '@app/app/services/storage.service';
+import { BadgesService } from '@app/app/services/badges.service';
 
 @Component({
   selector: 'app-tentativa',
   templateUrl: './tentativa.page.html',
   styleUrls: ['./tentativa.page.scss'],
 })
-export class TentativaPage implements OnInit{
+export class TentativaPage implements OnInit {
 
   quizz!: Quiz;
 
@@ -26,11 +27,13 @@ export class TentativaPage implements OnInit{
     private readonly storage: StorageService,
     private readonly actRoute: ActivatedRoute,
     private readonly toastService: ToastService,
-    private alertCtrl: AlertController
+    private readonly alertCtrl: AlertController,
+    private readonly badgeService: BadgesService
+
   ) { }
 
   async ngOnInit() {
-    await NativeAudio.preload({assetId: 'finished', assetPath: 'assets/sounds/finished.mp3'});
+    await NativeAudio.preload({ assetId: 'finished', assetPath: 'assets/sounds/finished.mp3' });
   }
 
 
@@ -84,9 +87,12 @@ export class TentativaPage implements OnInit{
       await this.storage.addTentativa(tentativa);
     } else {
       tentativa.numJogadas += 1;
-      tentativa.numAcertos =  tentativa.numAcertos < numAcertos ? numAcertos : tentativa.numAcertos
+      tentativa.numAcertos = tentativa.numAcertos < numAcertos ? numAcertos : tentativa.numAcertos
       await this.storage.updateTentativa(tentativa);
     }
+
+    await this.badgeService.atualizarNovosQuizzes()
+
   }
 
   async terminouQuizz(numAcertos: number) {
@@ -98,11 +104,11 @@ export class TentativaPage implements OnInit{
       await loading.present();
       await this.salvarTentativa(numAcertos)
       const rendimento = formatNumber((numAcertos / this.quizz.numQuestoes) * 100, this.locale, '1.0-0');
-      
+
       NativeAudio.play({
         assetId: 'finished'
       })
-      
+
       const alert = await this.alertCtrl.create({
         header: 'Resultado',
         message: `Você completou este quiz e acertou ${numAcertos} de ${this.quizz.numQuestoes} questões. Seu desempenho foi de ${rendimento}%.`,

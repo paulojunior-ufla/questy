@@ -16,6 +16,7 @@ export class QuizzesPage {
   quizzes: ResumoQuiz[] = []
   tentativas: Tentativa[] = []
   avisoLido: boolean = false
+  opcaoEscolhida = "Todos"
 
   constructor(
     private readonly quizService: QuizService,
@@ -33,6 +34,38 @@ export class QuizzesPage {
       this.avisoLido = await this.storage.leuAviso();
       this.quizzes = await this.quizService.getQuizzes();
       this.tentativas = await this.storage.getTentativas();
+    } catch (error) {
+      this.toastService.showMessage("Ops... algo deu errado! Tente novamente mais tarde",
+        ToastMessageType.ERROR)
+    } finally {
+      loading.dismiss();
+    }
+  }
+
+  async semFiltro() {
+    this.opcaoEscolhida = "Todos"
+    const loading = await this.loadingCtrl.create({
+      message: 'Carregando...'
+    });
+    try {
+      await loading.present();
+      this.quizzes = await this.quizService.getQuizzes();
+    } catch (error) {
+      this.toastService.showMessage("Ops... algo deu errado! Tente novamente mais tarde",
+        ToastMessageType.ERROR)
+    } finally {
+      loading.dismiss();
+    }
+  }
+
+  async porCategoria(cat: string) {
+    this.opcaoEscolhida = cat
+    const loading = await this.loadingCtrl.create({
+      message: 'Carregando...'
+    });
+    try {
+      await loading.present();
+      this.quizzes = await this.quizService.getQuizzesPorCategoria(cat);
     } catch (error) {
       this.toastService.showMessage("Ops... algo deu errado! Tente novamente mais tarde",
         ToastMessageType.ERROR)
