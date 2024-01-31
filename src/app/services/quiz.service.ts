@@ -29,7 +29,14 @@ export class QuizService {
   }
 
   getQuizz(id: number): Promise<Quiz> {
-    return firstValueFrom(this.http.get<Quiz>(`${BASE_URL}/${id}.json`));
+    const result$ = this.http.get<Quiz>(`${BASE_URL}/${id}.json`, {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
+    });
+    return firstValueFrom(result$);
   }
 
   async getQuantidadeQuizzes(): Promise<number> {
