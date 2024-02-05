@@ -12,6 +12,7 @@ export type Quiz = {
     id: number;
     titulo: string;
     imgCapa: string;
+    showCapa: boolean;
     desc: string;
     numQuestoes: number;
     questoes: Questao[];  

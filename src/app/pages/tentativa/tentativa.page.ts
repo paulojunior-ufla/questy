@@ -87,6 +87,7 @@ export class TentativaPage implements OnInit {
       await this.storage.addTentativa(tentativa);
     } else {
       tentativa.numJogadas += 1;
+      tentativa.imgCapa = this.quizz.imgCapa;
       tentativa.numAcertos = tentativa.numAcertos < numAcertos ? numAcertos : tentativa.numAcertos
       await this.storage.updateTentativa(tentativa);
     }

@@ -2,6 +2,7 @@
       "id": 4,
       "titulo": "Aula 3 - Eclesiastes - 28/01/24",
       "imgCapa": "https://cdn.pixabay.com/photo/2013/11/03/08/05/cheers-204742_960_720.jpg",
+      "showCapa": true,        
       "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 3 - Pra não dizer que não falei das flores - Ec 2:1-11<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
       "numQuestoes": 10,
       "questoes": [

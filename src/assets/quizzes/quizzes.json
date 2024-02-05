@@ -1,11 +1,18 @@
 [
     {
+        "id": 6,
+        "titulo": "Adoração alegre",
+        "imgCapa": "https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg",
+        "numQuestoes": 3,
+        "categoria": "Devocionais"
+    },
+    {
         "id": 5,
         "titulo": "Protegido por sua presença",
         "imgCapa": "https://cdn.pixabay.com/photo/2017/08/24/05/21/pyramid-2675466_960_720.jpg",
         "numQuestoes": 4,
         "categoria": "Devocionais"
-      },
+    },
     {
         "id": 4,
         "titulo": "Aula 3 - Eclesiastes - 28/01/24",
