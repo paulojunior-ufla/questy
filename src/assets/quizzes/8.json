@@ -1,0 +1,34 @@
+    {
+      "id": 8,
+      "titulo": "Quem dizes que eu sou?",
+      "imgCapa": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
+      "showCapa": false,
+      "desc": "<p>Texto-base: Mateus 16.16-17</p>\n<br/>\n<p>Quando lemos os Evangelhos, torna-se evidente que, quando as pessoas encontravam Jesus de Nazaré, raramente reagiam com uma neutralidade educada. As suas palavras e ações inspiravam profundo amor e devoção, mas também temor e ódio. O que poderia explicar essa gama de respostas? Nessa conversa na estrada para Cesareia de Filipe, Pedro falou — como costumava acontecer — e por outros além de si mesmo, quando respondeu: “Tu és o Cristo”. A palavra que ele usou para identificar Jesus foi Christos, que em grego significa “Messias” ou “Ungido”. Ao longo do Antigo Testamento, Deus ungiu reis, juízes e profetas, mas todos eles eram representantes e porta-vozes apontando para o futuro Messias, o Salvador, o próprio Ungido de Deus. Portanto, o que Pedro declarou foi especialmente notável. Ele estava dizendo a Jesus: Tu és aquele. Tu és aquele de quem os profetas falaram.</p>\n<br/>\n<p>O que é ainda mais surpreendente é a explicação de Jesus para a declaração de Pedro. Pedro não chegou a essa conclusão porque era esperto, ou porque tinha uma capacidade avançada de pensamento lógico e racional, ou porque um pregador inspirador lhe havia explicado isso. Sua declaração foi possível porque, na verdade, Deus Pai revelou a ele. A confissão de fé de Pedro, como a nossa, nunca poderia ter acontecido por sua própria força. A fé é um dom que nos é dado. Essa troca entre Pedro e Jesus é um exemplo concreto do Espírito de Deus tomando a Palavra de Deus e trazendo-a à mente e ao coração de alguém de uma maneira que faz com que essa pessoa declare o messianismo de Jesus.</p>\n<br/>\n<p>Como Pedro, nossa capacidade de declarar Jesus como Senhor e Messias não é obra nossa; é “dom de Deus; não de obras, para que ninguém se glorie” (Ef 2.8-9). Se a nossa fé fosse o resultado de nossa própria capacidade intelectual, inteligência emocional ou bondade moral, poderíamos depositar confiança — poderíamos nos gloriar — em nós mesmos. Contudo, nos dias bons, isso nos deixará orgulhosos, e nos dias ruins nos deixará frágeis. Não: a nossa fé repousa inteiramente no dom de Deus, e assim colocamos nossa confiança nele — e somos humildes nos nossos melhores dias e confiantes nos piores. Alegre-se com gratidão hoje, então, porque Deus se deleita em transformar corações e mentes pela verdade da sua Palavra, a fim de que possamos nos juntar a Pedro ao declarar: “Tu és o Cristo”.</p>\n<br/>\n<p>Fonte: <a target=\\\"_blank\\\" href=\\\"https://voltemosaoevangelho.com/blog/devocionais/quem-dizeis-que-eu-sou-mateus-16-16-17/\\\">Voltemos ao Evangelho<a/></p>",
+      "numQuestoes": 3,
+      "questoes": [
+        {
+          "questao": "Complete o versículo: \"Respondendo ........, disse: Tu és o ........., o Filho do Deus vivo.\" (Mt 16:16)",
+          "A": "Simão Pedro; Cristo",
+          "B": "Simão Pedro; Messias",
+          "C": "Paulo; Cristo",
+          "D": "Paulo; Messias",
+          "resposta": "A"
+        },
+        {
+          "questao": "O que significa a palavra grega \"Christos\", em português?",
+          "A": "Deus",
+          "B": "Messias",
+          "C": "Jesus",
+          "D": "Nenhuma das anteriores",
+          "resposta": "B"
+        },
+        {
+          "questao": "Segundo o devocional, a nossa fé é...",
+          "A": "Fraca",
+          "B": "Algo que nós merecemos receber de Deus",
+          "C": "Forte",
+          "D": "Um dom que nos é dado por Deus",
+          "resposta": "D"
+        }
+      ]
+    }
