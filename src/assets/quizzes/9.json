@@ -1,0 +1,82 @@
+    {
+      "id": 9,
+      "titulo": "Aula 4 - Eclesiastes - 25/02/24",
+      "imgCapa": "https://cdn.pixabay.com/photo/2020/10/09/13/12/man-5640540_960_720.jpg",
+      "showCapa": false,
+      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 4 - Quantas vezes morreremos - Ec 2:12-17<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
+      "numQuestoes": 9,
+      "questoes": [
+        {
+          "questao": "Qual foi o tema principal da aula de hoje?",
+          "A": "A sabedoria",
+          "B": "A morte",
+          "C": "Os prazeres",
+          "D": "O conhecimento",
+          "resposta": "B"
+        },
+        {
+          "questao": "Qual foi o texto base lido nesta aula?",
+          "A": "Ec 1:1-11",
+          "B": "Ec 1:12-18",
+          "C": "Ec 2:1-11",
+          "D": "Ec 2:12-27",
+          "resposta": "D"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"conversar sobre a morte é uma das coisas mais comuns e ao mesmo tempo mais difíceis\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Complete o versículo: \"Pelo que ......... a vida, pois me foi penosa a obra que se faz debaixo do sol; sim, tudo é vaidade e correr atrás do vento\" (Ec 2:17)",
+          "A": "Aborreci",
+          "B": "Adorei",
+          "C": "Amei",
+          "D": "Detestei",
+          "resposta": "A"
+        },
+        {
+          "questao": "Por que é tão difícil falar sobre a morte?",
+          "A": "Porque não estudamos muito sobre o assunto",
+          "B": "Porque não fomos feitos para a morte",
+          "C": "Porque a Bíblia não diz nada sobre a morte",
+          "D": "Nenhuma das anteriores",
+          "resposta": "B"
+        },
+        {
+          "questao": "Nesta aula, nós vimos que Salomão disse que \"a sabedoria é mais proveitosa do que a estultícia\". As expressões abaixo são sinônimos de \"estultícia\", exceto:",
+          "A": "Falta de juízo",
+          "B": "Loucura",
+          "C": "Tolice",
+          "D": "Santidade",
+          "resposta": "D"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"a sabedoria pode prolongar sua vida por causa da prudência\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"não podemos viver para sempre, mas nosso nome nunca será esquecido para sempre\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "B"
+        },
+        {
+          "questao": "Quem é o único que pode nos salvar da morte?",
+          "A": "Salomão",
+          "B": "A sabedoria humana",
+          "C": "Jesus Cristo",
+          "D": "A ciência",
+          "resposta": "C"
+        }
+      ]
+    }
