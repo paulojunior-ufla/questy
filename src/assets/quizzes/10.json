@@ -1,0 +1,74 @@
+    {
+      "id": 10,
+      "titulo": "Aula 5 - Eclesiastes - 10/03/24",
+      "imgCapa": "https://cdn.pixabay.com/photo/2023/09/21/06/27/turnip-8266093_960_720.jpg",
+      "showCapa": true,
+      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 5 - Dando trabalho - Ec 2:18-26<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
+      "numQuestoes": 8,
+      "questoes": [
+        {
+          "questao": "Qual foi o tema principal da aula de hoje?",
+          "A": "A sabedoria",
+          "B": "A morte",
+          "C": "Os prazeres",
+          "D": "O trabalho",
+          "resposta": "D"
+        },
+        {
+          "questao": "Qual foi o texto base lido nesta aula?",
+          "A": "Ec 2:18-26",
+          "B": "Ec 1:12-18",
+          "C": "Ec 2:1-11",
+          "D": "Ec 2:12-27",
+          "resposta": "A"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"debaixo do sol, o trabalho é, ao mesmo tempo, fonte de alegria e frustração\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Complete o versículo: \"Porque todos os seus dias são dores, e o seu trabalho, desgosto; até de ....... não descansa o seu coração; também isto é vaidade. \" (Ec 2:23)",
+          "A": "manhã",
+          "B": "tarde",
+          "C": "noite",
+          "D": "madrugada",
+          "resposta": "C"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"se trabalharmos muito, o nosso legado durará para sempre\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "B"
+        },
+        {
+          "questao": "São exemplos de frustrações que podemos enfrentar no trabalho, exceto:",
+          "A": "Injustiça",
+          "B": "Cansaço",
+          "C": "Desentendimento",
+          "D": "Reconhecimento",
+          "resposta": "D"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"tendo Deus como referência, podemos aproveitar com alegria os frutos no nosso trabalho\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "A"
+        },
+        {
+          "questao": "Verdadeiro ou falso: \"trabalho digno e que agrada ao Senhor é aquele que paga bem\".",
+          "A": "Verdadeiro",
+          "B": "Falso",
+          "C": "",
+          "D": "",
+          "resposta": "B"
+        }
+      ]
+    }

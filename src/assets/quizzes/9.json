@@ -2,8 +2,8 @@
       "id": 9,
       "titulo": "Aula 4 - Eclesiastes - 25/02/24",
       "imgCapa": "https://cdn.pixabay.com/photo/2020/10/09/13/12/man-5640540_960_720.jpg",
-      "showCapa": false,
-      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 4 - Quantas vezes morreremos - Ec 2:12-17<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
+      "showCapa": true,
+      "desc": "<strong>SÉRIE DE AULAS SOBRE O LIVRO DE ECLESIASTES</strong><br/>\nCapítulo 4 - Quantas vezes morreremos? - Ec 2:12-17<br/>\n(<i>baseada no livro “Isto é Filtro Solar”, do Rev. Emilio Garofalo Neto</i>)",
       "numQuestoes": 9,
       "questoes": [
         {
@@ -19,7 +19,7 @@
           "A": "Ec 1:1-11",
           "B": "Ec 1:12-18",
           "C": "Ec 2:1-11",
-          "D": "Ec 2:12-27",
+          "D": "Ec 2:12-17",
           "resposta": "D"
         },
         {
